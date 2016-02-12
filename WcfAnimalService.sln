@@ -1,0 +1,139 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfAnimalServiceLibrary", "..\WcfAnimalServiceLibrary\WcfAnimalServiceLibrary.csproj", "{17681415-6977-4A6E-8D69-972B7C27EF7B}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WcfAnimalSvcIISHost", "..\WcfAnimalServiceLibrary\WcfAnimalSvcIISHost", "{0FC69B84-3F41-4926-A330-6F65C94B8554}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		ProjectReferences = "{17681415-6977-4a6e-8d69-972b7c27ef7b}|WcfAnimalServiceLibrary.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51979"
+		Debug.AspNetCompiler.PhysicalPath = "..\WcfAnimalServiceLibrary\WcfAnimalSvcIISHost\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51979\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51979"
+		Release.AspNetCompiler.PhysicalPath = "..\WcfAnimalServiceLibrary\WcfAnimalSvcIISHost\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51979\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51979"
+		SlnRelativePath = "..\WcfAnimalServiceLibrary\WcfAnimalSvcIISHost\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebAppAnimalSvcConsumer", "..\WcfAnimalServiceLibrary\WebAppAnimalSvcConsumer", "{CECFEC19-0FB3-4E71-BDDC-4AE1062259B2}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_52102"
+		Debug.AspNetCompiler.PhysicalPath = "..\WcfAnimalServiceLibrary\WebAppAnimalSvcConsumer\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52102\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_52102"
+		Release.AspNetCompiler.PhysicalPath = "..\WcfAnimalServiceLibrary\WebAppAnimalSvcConsumer\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_52102\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "52102"
+		SlnRelativePath = "..\WcfAnimalServiceLibrary\WebAppAnimalSvcConsumer\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+	ProjectSection(ProjectDependencies) = postProject
+		{17681415-6977-4A6E-8D69-972B7C27EF7B} = {17681415-6977-4A6E-8D69-972B7C27EF7B}
+		{0FC69B84-3F41-4926-A330-6F65C94B8554} = {0FC69B84-3F41-4926-A330-6F65C94B8554}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfAnimalServiceProxies", "WcfAnimalServiceProxies\WcfAnimalServiceProxies.csproj", "{0FC9107D-C77C-40F3-BFDB-399D78F9F781}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfAnimalServiceClient", "WcfAnimalServiceClient\WcfAnimalServiceClient.csproj", "{3170E6D6-2BE5-4600-9719-4C15710B0AE6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0FC69B84-3F41-4926-A330-6F65C94B8554} = {0FC69B84-3F41-4926-A330-6F65C94B8554}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WcfAnimalServiceClient2", "WcfAnimalServiceClient2\WcfAnimalServiceClient2.csproj", "{5F9DAF41-63F8-432E-A81F-3383AFA9A785}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0FC69B84-3F41-4926-A330-6F65C94B8554} = {0FC69B84-3F41-4926-A330-6F65C94B8554}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17681415-6977-4A6E-8D69-972B7C27EF7B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17681415-6977-4A6E-8D69-972B7C27EF7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17681415-6977-4A6E-8D69-972B7C27EF7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17681415-6977-4A6E-8D69-972B7C27EF7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FC69B84-3F41-4926-A330-6F65C94B8554}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC69B84-3F41-4926-A330-6F65C94B8554}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC69B84-3F41-4926-A330-6F65C94B8554}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC69B84-3F41-4926-A330-6F65C94B8554}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{CECFEC19-0FB3-4E71-BDDC-4AE1062259B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CECFEC19-0FB3-4E71-BDDC-4AE1062259B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CECFEC19-0FB3-4E71-BDDC-4AE1062259B2}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{CECFEC19-0FB3-4E71-BDDC-4AE1062259B2}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{0FC9107D-C77C-40F3-BFDB-399D78F9F781}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FC9107D-C77C-40F3-BFDB-399D78F9F781}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FC9107D-C77C-40F3-BFDB-399D78F9F781}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FC9107D-C77C-40F3-BFDB-399D78F9F781}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3170E6D6-2BE5-4600-9719-4C15710B0AE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3170E6D6-2BE5-4600-9719-4C15710B0AE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3170E6D6-2BE5-4600-9719-4C15710B0AE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3170E6D6-2BE5-4600-9719-4C15710B0AE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F9DAF41-63F8-432E-A81F-3383AFA9A785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F9DAF41-63F8-432E-A81F-3383AFA9A785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F9DAF41-63F8-432E-A81F-3383AFA9A785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F9DAF41-63F8-432E-A81F-3383AFA9A785}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 7
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mae-laurenesuralta.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\WcfAnimalServiceLibrary\\WcfAnimalServiceLibrary.csproj
+		SccProjectName1 = ../WcfAnimalServiceLibrary
+		SccLocalPath1 = ..\\WcfAnimalServiceLibrary
+		SccWebProject2 = true
+		SccProjectUniqueName2 = ..\\WcfAnimalServiceLibrary\\WcfAnimalSvcIISHost
+		SccProjectName2 = ../WcfAnimalServiceLibrary/WcfAnimalSvcIISHost
+		SccLocalPath2 = ..\\WcfAnimalServiceLibrary\\WcfAnimalSvcIISHost
+		SccProjectEnlistmentChoice2 = 2
+		SccWebProject3 = true
+		SccProjectUniqueName3 = ..\\WcfAnimalServiceLibrary\\WebAppAnimalSvcConsumer
+		SccProjectName3 = ../WcfAnimalServiceLibrary/WebAppAnimalSvcConsumer
+		SccLocalPath3 = ..\\WcfAnimalServiceLibrary\\WebAppAnimalSvcConsumer
+		SccProjectEnlistmentChoice3 = 2
+		SccProjectUniqueName4 = WcfAnimalServiceProxies\\WcfAnimalServiceProxies.csproj
+		SccProjectName4 = WcfAnimalServiceProxies
+		SccLocalPath4 = WcfAnimalServiceProxies
+		SccProjectUniqueName5 = WcfAnimalServiceClient\\WcfAnimalServiceClient.csproj
+		SccProjectName5 = WcfAnimalServiceClient
+		SccLocalPath5 = WcfAnimalServiceClient
+		SccProjectUniqueName6 = WcfAnimalServiceClient2\\WcfAnimalServiceClient2.csproj
+		SccProjectName6 = WcfAnimalServiceClient2
+		SccLocalPath6 = WcfAnimalServiceClient2
+	EndGlobalSection
+EndGlobal

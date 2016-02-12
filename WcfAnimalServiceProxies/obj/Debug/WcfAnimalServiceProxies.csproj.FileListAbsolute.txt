@@ -1,0 +1,7 @@
+C:\dev\WcfAnimalService\WcfAnimalServiceProxies\bin\Debug\WcfAnimalServiceProxies.dll
+C:\dev\WcfAnimalService\WcfAnimalServiceProxies\bin\Debug\WcfAnimalServiceProxies.pdb
+C:\dev\WcfAnimalService\WcfAnimalServiceProxies\bin\Debug\WcfAnimalServiceLibrary.dll
+C:\dev\WcfAnimalService\WcfAnimalServiceProxies\bin\Debug\WcfAnimalServiceLibrary.pdb
+C:\dev\WcfAnimalService\WcfAnimalServiceProxies\obj\Debug\WcfAnimalServiceProxies.csprojResolveAssemblyReference.cache
+C:\dev\WcfAnimalService\WcfAnimalServiceProxies\obj\Debug\WcfAnimalServiceProxies.dll
+C:\dev\WcfAnimalService\WcfAnimalServiceProxies\obj\Debug\WcfAnimalServiceProxies.pdb

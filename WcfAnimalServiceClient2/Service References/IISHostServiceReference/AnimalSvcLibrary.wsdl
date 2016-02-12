@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="AnimalSvcLibrary" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:51979/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:51979/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:51979/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WcfAnimalServiceLibrary" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IAnimalSvcLibrary_GreetAnimal_InputMessage">
+    <wsdl:part name="parameters" element="tns:GreetAnimal" />
+  </wsdl:message>
+  <wsdl:message name="IAnimalSvcLibrary_GreetAnimal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GreetAnimalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAnimalSvcLibrary_AddAnimal_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddAnimal" />
+  </wsdl:message>
+  <wsdl:message name="IAnimalSvcLibrary_AddAnimal_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddAnimalResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAnimalSvcLibrary_getAnimals_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAnimals" />
+  </wsdl:message>
+  <wsdl:message name="IAnimalSvcLibrary_getAnimals_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAnimalsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IAnimalSvcPrivateLibrary_GetAnimalInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnimalInfo" />
+  </wsdl:message>
+  <wsdl:message name="IAnimalSvcPrivateLibrary_GetAnimalInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAnimalInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IAnimalSvcLibrary">
+    <wsdl:operation name="GreetAnimal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAnimalSvcLibrary/GreetAnimal" message="tns:IAnimalSvcLibrary_GreetAnimal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAnimalSvcLibrary/GreetAnimalResponse" message="tns:IAnimalSvcLibrary_GreetAnimal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddAnimal">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAnimalSvcLibrary/AddAnimal" message="tns:IAnimalSvcLibrary_AddAnimal_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAnimalSvcLibrary/AddAnimalResponse" message="tns:IAnimalSvcLibrary_AddAnimal_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAnimals">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAnimalSvcLibrary/getAnimals" message="tns:IAnimalSvcLibrary_getAnimals_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAnimalSvcLibrary/getAnimalsResponse" message="tns:IAnimalSvcLibrary_getAnimals_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="IAnimalSvcPrivateLibrary">
+    <wsdl:operation name="GetAnimalInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IAnimalSvcPrivateLibrary/GetAnimalInfo" message="tns:IAnimalSvcPrivateLibrary_GetAnimalInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IAnimalSvcPrivateLibrary/GetAnimalInfoResponse" message="tns:IAnimalSvcPrivateLibrary_GetAnimalInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IAnimalSvcLibrary" type="tns:IAnimalSvcLibrary">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GreetAnimal">
+      <soap:operation soapAction="http://tempuri.org/IAnimalSvcLibrary/GreetAnimal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddAnimal">
+      <soap:operation soapAction="http://tempuri.org/IAnimalSvcLibrary/AddAnimal" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAnimals">
+      <soap:operation soapAction="http://tempuri.org/IAnimalSvcLibrary/getAnimals" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="BasicHttpBinding_IAnimalSvcPrivateLibrary" type="tns:IAnimalSvcPrivateLibrary">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAnimalInfo">
+      <soap:operation soapAction="http://tempuri.org/IAnimalSvcPrivateLibrary/GetAnimalInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="AnimalSvcLibrary">
+    <wsdl:port name="BasicHttpBinding_IAnimalSvcLibrary" binding="tns:BasicHttpBinding_IAnimalSvcLibrary">
+      <soap:address location="http://localhost:51979/Service.svc" />
+    </wsdl:port>
+    <wsdl:port name="BasicHttpBinding_IAnimalSvcPrivateLibrary" binding="tns:BasicHttpBinding_IAnimalSvcPrivateLibrary">
+      <soap:address location="http://localhost:51979/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

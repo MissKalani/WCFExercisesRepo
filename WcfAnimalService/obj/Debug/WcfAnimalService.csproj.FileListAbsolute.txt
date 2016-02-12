@@ -1,0 +1,6 @@
+C:\dev\WcfAnimalService\WcfAnimalService\bin\WcfAnimalService.dll.config
+C:\dev\WcfAnimalService\WcfAnimalService\bin\WcfAnimalService.dll
+C:\dev\WcfAnimalService\WcfAnimalService\bin\WcfAnimalService.pdb
+C:\dev\WcfAnimalService\WcfAnimalService\obj\Debug\WcfAnimalService.dll
+C:\dev\WcfAnimalService\WcfAnimalService\obj\Debug\WcfAnimalService.pdb
+C:\dev\WcfAnimalService\WcfAnimalService\obj\Debug\WcfAnimalService.csprojResolveAssemblyReference.cache
